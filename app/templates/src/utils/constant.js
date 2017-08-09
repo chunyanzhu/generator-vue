@@ -1,0 +1,1 @@
+export const ERRORTIP = '系统故障，请稍后重试！';

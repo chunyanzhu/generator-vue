@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no, email=no"/>
+	<title><%= projectName%></title>
+	<script>
+		(function (designWidth) {
+            'use strict';
+            var docEl = document.documentElement;
+            var scale = 1;
+            var $viewport = document.querySelector('meta[name="viewport"]');
+            var content = 'initial-scale=' + scale +
+                ',maximum-scale=' + scale +
+                ',minimum-scale=' + scale +
+                ',width=device-width' +
+                ',user-scalable=no';
+
+            if ($viewport) {
+                $viewport.setAttribute('content', content);
+            } else {
+                var metaViewport = '<meta name="viewport" content="' + content + '"/>';
+                document.write(metaViewport);
+            }
+
+            var setFontSize = function () {
+                var width = docEl.clientWidth;
+                var fontSize = width / designWidth * 50;
+                docEl.style.fontSize = fontSize + 'px';
+            };
+
+            setFontSize();
+            window.addEventListener('resize', setFontSize);
+        })(1730);
+	</script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
