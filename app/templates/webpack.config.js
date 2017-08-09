@@ -29,12 +29,9 @@ files.forEach(function(file){
 
 
 var ip = {
-    online: 'http://111.206.227.232',
-    dconline: 'http://106.39.169.66',
-    prerelease: 'http://10.190.0.207',
-    prerelease2: 'http://10.191.159.209',
-    test: 'http://192.168.104.13:8060/',
-    test2: 'http://192.168.172.51:8100/',
+    online: 'http://123.125.114.144',
+    prerelease: 'http://123.125.114.144',
+    test: 'http://123.125.114.144:8060/',
     local: 'http://127.0.0.1'
 };
 
@@ -44,23 +41,22 @@ var __PUBLICPATH__ = '',
 
 switch (nodeEnv){
     case 'TEST':
-        //__PUBLICPATH__ = 'http://full.lspweb.o2o.jd.com/static/web/dist';
+        //__PUBLICPATH__ = 'http://baidu.com/static/web/dist';
         __PUBLICPATH__ = '/static/web/dist';
         __PATH__ = path.join(__dirname, '../static/web/dist/');
-        __DOMAIN__ = 'http://full.lspweb.o2o.jd.com'
+        __DOMAIN__ = 'http://baidu.com'
         break;   
     case 'ONLINE':
-        //__PUBLICPATH__ = 'https://full.lspweb.o2o.jd.coms/static/web/dist/';
+        //__PUBLICPATH__ = 'https://baidu.com/static/web/dist/';
         __PUBLICPATH__ = '/static/web/dist/';
         __PATH__ = path.join(__dirname, '../static/web/dist/');
-        __DOMAIN__ = 'https://full.lspweb.o2o.jd.com'
+        __DOMAIN__ = 'https://baidu.com'
         break;
     default:
         //__PUBLICPATH__ = 'http://localhost:' + port + '/dist/';
-        //__PUBLICPATH__ = 'http://full.lspweb.o2o.jd.com/dist/';
         __PUBLICPATH__ = '/dist/';
         __PATH__ = path.join(__dirname, './dist/');
-        __DOMAIN__ = 'http://full.lspweb.o2o.jd.com'
+        __DOMAIN__ = 'http://baidu.com'
 }
 
 var config = {
