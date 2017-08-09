@@ -1,6 +1,6 @@
 {
-  "name": "jddj-generator-vue",
-  "version": "0.0.1",
+  "name": "generator-vue-jddj",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
