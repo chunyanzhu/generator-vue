@@ -1,6 +1,6 @@
 {
-  "name": "generator-vue",
-  "version": "1.0.0",
+  "name": "jddj-generator-vue",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "zhuchunyan",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chunyanzhu/generator-vue.git"
+  }
   "keywords": [
     "yeoman-generator",
     "yeoman"

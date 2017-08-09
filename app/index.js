@@ -16,9 +16,7 @@ module.exports = generators.Base.extend({
         //now _.contains has been abandoned by lodash,use _.includes
         if(_.includes(dirs, 'src')){
             log(chalk.bold.green('资源已经初始化，退出...'));
-            //setTimeout(function(){
-                process.exit(1);
-            //}, 200);
+            process.exit(1);
         }
     },
     prompting: function(){
@@ -63,12 +61,5 @@ module.exports = generators.Base.extend({
     },
     end: function(){
         del(['src/**/.gitignore','src/**/.npmignore','src/js/index.js']);
-        //var dirs = glob.sync('+(node_modules)');
-        /*if(!_.includes(dirs, 'node_modules')){
-            //创建软连接
-            //this.spawnCommand('ln', ['-s', '/usr/local/lib/node_modules/common-packages/'+generatorName+'/node_modules', 'node_modules']);
-            ///Users/mfhj-009/.nvm/versions/node/v7.10.0/lib/node_modules
-            this.spawnCommand('ln', ['-s', '/Users/mfhj-009/.nvm/versions/node/v7.10.0/lib/node_modules/generator-vue/node_modules', 'node_modules']);
-        }*/
     }
 })
